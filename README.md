@@ -1,50 +1,51 @@
 # Statistical Data Analysis: Solving Time Performance & Learning Curves
 
-This repository contains the final project for the **Probability Theory and Statistics** course (June 2023). The project focuses on statistical inference and predictive modeling using **IBM SPSS**, analyzing the performance and learning patterns of players in a word-puzzle game.
+This repository contains the final statistical analysis project for the **Probability Theory and Statistics** course (June 2023). The study utilizes **IBM SPSS Statistics** to analyze and model the learning progress of two players in word-puzzle games.
 
 ## 🚀 Project Overview
-The study analyzes two datasets: `timeA` (Player A, experienced) and `timeB` (Student, new player). The goal is to compare performance metrics and model the "learning effect" over time through linear regression.
+The analysis compares two datasets: `timeA` (experienced player) and `timeB` (student/group data). By applying statistical inference and regression models, we evaluate performance differences and the "learning effect" over time.
 
 ## 🛠 Methodology & Tools
 * **Software:** IBM SPSS Statistics
-* **Statistical Techniques:** Descriptive Analysis, Hypothesis Testing (t-tests), Confidence Intervals (95%), Linear Regression, and Correlation Analysis.
+* **Statistical Techniques:** Descriptive Statistics, Independent Samples T-Test, Confidence Intervals (95%), Simple & Piecewise Linear Regression.
 
-## 📊 Statistical Highlights & Results
+## 📊 Key Statistical Findings
 
 ### 1. Comparative Analysis
-* **Performance:** Hypothesis testing (Independent Samples T-Test) confirmed that **Player B (Student)** achieved a significantly lower mean solving time than Player A.
-* **Variability:** 95% Confidence Intervals for standard deviation:
-  * Player A: $\sigma \in [26.71, 40.58]$
-  * Player B (Student): $\sigma \in [23.82, 34.69]$
-* **Key Visual:**
+* **Inference:** Hypothesis testing confirmed that **Player B (Student)** achieved significantly lower mean solving times compared to Player A.
+* **Variability (95% CI for $\sigma$):**
+    * Player A: $[26.71, 39.69]$
+    * Player B (Student): $[24.12, 40.71]$
+* **Visual Data:**
 ![Boxplot Comparison](./images/boxplot_comparison.png)
-*Figure 1: Comparison of solving times (timeA vs timeB) showing lower median for Student.*
+*Figure 1: Boxplot comparison of solving times (timeA vs timeB).*
 
-### 2. Regression & Learning Curves
-* **Correlation:** Found significant negative correlation for both, showing the learning effect:
-  * Player A: $r = -0.781$
-  * Student (Player B): $r = -0.835$ (Stronger correlation than Player A)
-* **Your Estimated Models (Page 9):** * Player A: $time = 145.318 - 0.622 \times day$
-  * Player B (Student): $time = 120.457 - 0.730 \times day$
-* **Interpretation:** Your learning rate (slope -0.730) is actually **faster** than Player A's (-0.622), meaning you improved more quickly!
+### 2. Correlation & Regression Modeling
+* **Correlation ($r$):** A very strong negative correlation was found for the student sample ($r = -0.913$), significantly stronger than Player A's ($r = -0.781$).
+* **Linear Models:**
+    * **Player A:** $time = 145.318 - 0.622 \times day$ ($R^2 = 0.61$)
+    * **Player B (Student):** $time = 145.893 - 0.800 \times day$ ($R^2 = 0.833$)
+* **Learning Rate:** The student demonstrated a faster overall learning rate (slope $-0.800$) compared to Player A (slope $-0.622$).
 
 ![Linear Regression](./images/regression_line.png)
-*Figure 2: Linear regression model visualizing your specific learning curve ($R^2 = 0.697$).*
+*Figure 2: Linear regression model visualizing the learning curve for the Student dataset.*
 
-## 📋 Key Findings
-* **Learning Rate:** Both players demonstrated nearly identical learning rates (slopes of -0.622 vs -0.618).
-* **Stability:** Player B's learning rate remained stable throughout the study, while Player A showed accelerated improvement in the later stages.
-* **Limitations:** The report includes a critical evaluation of model assumptions (normality and variance equality).
+### 3. Piecewise Regression Analysis
+The study investigated shifts in learning trends by splitting the data into two phases:
+* **Player A:** Improvement accelerated after day 75 (slope increased from $-0.622$ to $-0.755$).
+* **Player B (Student):** Showed an extremely rapid initial adaptation (slope $-1.060$ for the first 61 days), followed by a stabilization phase (slope $-0.517$).
 
 ## 📂 Repository Structure
-* `/docs`: Project guidelines and the final analytical report.
-* `/images`: Key charts extracted from SPSS (Boxplots, Scatter Plots, Coefficients).
+* `/docs`: Project guidelines and the final report (`Statistical_Analysis_Report.pdf`).
+* `/images`: SPSS output charts (Boxplots, Scatter Plots, Regression Tables).
 
 ## 📂 Project Documents
-* [📄 Assignment Description (PDF)](./docs/Probability_Statistics_Assignment.pdf)
+* [📄 Assignment Description (PDF)](./docs/Project2023.pdf)
 * [✅ Final Project Report (PDF)](./docs/Statistical_Analysis_Report.pdf)
 
 ## 🎓 Academic Info
 * **Institution:** Aristotle University of Thessaloniki (AUTh)
+* **Department:** Electrical and Computer Engineering (ECE)
+* **Course:** Probability Theory and Statistics (2023)
 * **Team:** A. Alexiadis (10617) & A. Galazoulas (10629)
 * **Instructor:** Prof. D. Kugiumtzis
