@@ -9,7 +9,7 @@ The study analyzes two datasets: `timeA` (Player A, experienced) and `timeB` (St
 * **Software:** IBM SPSS Statistics
 * **Statistical Techniques:** Descriptive Analysis, Hypothesis Testing (t-tests), Confidence Intervals (95%), Linear Regression, and Correlation Analysis.
 
-## 📊 Statistical Highlights & Results (Based on Group 107 Data)
+## 📊 Statistical Highlights & Results
 
 ### 1. Comparative Analysis
 * **Performance:** Hypothesis testing (Independent Samples T-Test) confirmed that **Player B (Student)** achieved a significantly lower mean solving time than Player A.
