@@ -28,5 +28,5 @@ The study analyzes two datasets: `timeA` (Player A, experienced) and `timeB` (St
 * **Institution:** Aristotle University of Thessaloniki (AUTh)
 * **Department:** Electrical and Computer Engineering
 * **Course:** Probability Theory and Statistics (2023)
-* **Team:** A. Alexiadis (10617) & A. Galazoulas (10629)
+* **Team:** A. Alexiadis & A. Galazoulas
 * **Instructor:** Prof. D. Kugiumtzis
