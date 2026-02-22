@@ -9,23 +9,27 @@ The study analyzes two datasets: `timeA` (Player A, experienced) and `timeB` (St
 * **Software:** IBM SPSS Statistics
 * **Statistical Techniques:** Descriptive Analysis, Hypothesis Testing (t-tests), Confidence Intervals (95%), Linear Regression, and Correlation Analysis.
 
-## 📊 Statistical Highlights & Results
+## 📊 Statistical Highlights & Results (Based on Group 107 Data)
 
 ### 1. Comparative Analysis
-* **Performance:** Hypothesis testing confirmed that **Player B (Student)** consistently achieved lower solving times compared to Player A.
-* **Variability:** 95% Confidence Intervals for standard deviation showed slightly higher dispersion for Player A ([26.71, 39.94]) than Player B ([19.51, 32.93]).
-* **Visual Comparison:**
+* **Performance:** Hypothesis testing (Independent Samples T-Test) confirmed that **Player B (Student)** achieved a significantly lower mean solving time than Player A.
+* **Variability:** 95% Confidence Intervals for standard deviation:
+  * Player A: $\sigma \in [26.71, 40.58]$
+  * Player B (Student): $\sigma \in [23.82, 34.69]$
+* **Key Visual:**
 ![Boxplot Comparison](./images/boxplot_comparison.png)
-*Figure 1: Comparison of solving times (timeA vs timeB).*
+*Figure 1: Comparison of solving times (timeA vs timeB) showing lower median for Student.*
 
 ### 2. Regression & Learning Curves
-* **Correlation:** Strong negative correlation found for both subjects (Player A: $r = -0.781$, Player B: $r = -0.820$), proving a significant learning effect.
-* **Estimated Models:** * Player A: $time = 145.318 - 0.622 \times day$
-  * Player B: $time = 94.609 - 0.618 \times day$
-* **Prediction:** The models successfully predict the reduction in solving time as experience increases.
-* **Learning Trend:**
+* **Correlation:** Found significant negative correlation for both, showing the learning effect:
+  * Player A: $r = -0.781$
+  * Student (Player B): $r = -0.835$ (Stronger correlation than Player A)
+* **Your Estimated Models (Page 9):** * Player A: $time = 145.318 - 0.622 \times day$
+  * Player B (Student): $time = 120.457 - 0.730 \times day$
+* **Interpretation:** Your learning rate (slope -0.730) is actually **faster** than Player A's (-0.622), meaning you improved more quickly!
+
 ![Linear Regression](./images/regression_line.png)
-*Figure 2: Linear regression model visualizing the learning curve.*
+*Figure 2: Linear regression model visualizing your specific learning curve ($R^2 = 0.697$).*
 
 ## 📋 Key Findings
 * **Learning Rate:** Both players demonstrated nearly identical learning rates (slopes of -0.622 vs -0.618).
