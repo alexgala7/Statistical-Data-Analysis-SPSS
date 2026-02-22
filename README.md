@@ -38,7 +38,7 @@ The study analyzes two datasets: `timeA` (Player A, experienced) and `timeB` (St
 
 ## 📂 Project Documents
 * [📄 Assignment Description (PDF)](./docs/Probability_Statistics_Assignment.pdf)
-* [✅ Final Project Report (PDF)](./docs/Statistical_Analysis_Report_Wordle.pdf)
+* [✅ Final Project Report (PDF)](./docs/Statistical_Analysis_Report.pdf)
 
 ## 🎓 Academic Info
 * **Institution:** Aristotle University of Thessaloniki (AUTh)
